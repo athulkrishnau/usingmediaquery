@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('full-shot-adult-with-equipment-riding-motorcycle.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+nav {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Darker background for better contrast */
+    padding: 1em 2em;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav .logo img {
+    height: 50px; /* Adjust size if needed */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 1.5em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #aaa; /* Subtle hover effect */
+}
+
+.landing-page-container {
+    text-align: center;
+    background: rgba(40, 40, 40, 0.9); /* Dark background with slight transparency */
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Darker shadow for depth */
+    max-width: 500px;
+    height:200px;
+    width: 60%;
+    margin-top: 120px; /* Increased margin for better spacing */
+}
+
+.landing-page-container h1 {
+    font-size: 2.5em;
+    color: #f1f1f1; /* Light color for better readability */
+    margin-bottom: 0.5em;
+    gap: 200px;
+}
+
+button {
+    padding: 0.75em 2em;
+    border: none;
+    border-radius: 5px;
+    background: #ff4500; /* Bright orange for contrast */
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+button:hover {
+    background: #ff6347; /* Lighter orange on hover */
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.8); /* Glowing effect */
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: radial-gradient(circle, rgba(255, 69, 0, 0.3), rgba(255, 69, 0, 0) 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+button:hover::before {
+    opacity: 1; /* Glowing effect */
+}
